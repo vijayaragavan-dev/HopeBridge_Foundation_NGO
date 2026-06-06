@@ -1,0 +1,188 @@
+/* ============================================
+   HOPEBRIDGE FOUNDATION - Theme System
+   ============================================ */
+
+/* ===== Theme Transition ===== */
+html {
+  transition: background-color 0.3s ease;
+}
+
+html *,
+html *::before,
+html *::after {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.1rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.theme-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-bg);
+}
+
+.theme-toggle .theme-icon {
+  line-height: 1;
+}
+
+.theme-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dark);
+  color: var(--white);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  pointer-events: none;
+  font-family: var(--font-body);
+}
+
+.theme-toggle:hover .theme-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== Dark Theme ===== */
+[data-theme="dark"] {
+  --primary: #34d399;
+  --primary-dark: #10b981;
+  --primary-light: #6ee7b7;
+  --primary-bg: #064e3b;
+  --secondary: #38bdf8;
+  --secondary-dark: #0284c7;
+  --secondary-light: #7dd3fc;
+  --secondary-bg: #0c4a6e;
+  --accent: #fbbf24;
+  --accent-dark: #f59e0b;
+  --accent-bg: #78350f;
+  --dark: #f1f5f9;
+  --dark-2: #e2e8f0;
+  --text: #cbd5e1;
+  --text-light: #94a3b8;
+  --border: #334155;
+  --bg-light: #0f172a;
+  --white: #1e293b;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.5), 0 2px 4px -2px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5), 0 4px 6px -4px rgba(0,0,0,0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.5), 0 8px 10px -6px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] body {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .navbar {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #022c22 0%, #082f49 100%);
+}
+
+[data-theme="dark"] .page-header {
+  background: linear-gradient(135deg, #022c22 0%, #082f49 100%);
+}
+
+[data-theme="dark"] .counters {
+  background: linear-gradient(135deg, #065f46 0%, #064e3b 100%);
+}
+
+[data-theme="dark"] .cta-section {
+  background: linear-gradient(135deg, #065f46 0%, #075985 100%);
+}
+
+[data-theme="dark"] .footer {
+  background: #020617;
+}
+
+[data-theme="dark"] .btn-white {
+  background: #ffffff;
+  color: var(--primary-dark);
+}
+
+[data-theme="dark"] .btn-white:hover {
+  background: #f1f5f9;
+  color: var(--primary-dark);
+}
+
+[data-theme="dark"] .btn-outline[style*="border-color: white"],
+[data-theme="dark"] .btn-outline[style*="color: white"] {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .nav-links {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .nav-links a {
+  border-color: #334155;
+}
+
+[data-theme="dark"] .lightbox {
+  background: rgba(0,0,0,0.95);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: #334155;
+}
+
+[data-theme="dark"] .impact-metric {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .hero-stat {
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .donate-stat {
+  background: rgba(5,150,105,0.15);
+}
+
+[data-theme="dark"] .tier-card.featured {
+  background: #0f2937;
+}
+
+[data-theme="dark"] ::selection {
+  background: rgba(52,211,153,0.3);
+  color: #f1f5f9;
+}
+
+/* ===== Accessibility: Focus ===== */
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ===== Mobile Nav Toggle in Dark Mode ===== */
+[data-theme="dark"] .nav-toggle span {
+  background: var(--dark);
+}
