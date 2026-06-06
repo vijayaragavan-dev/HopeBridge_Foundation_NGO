@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register as a volunteer with HopeBridge Foundation. Join our network of 5,000+ volunteers and make a difference in education, healthcare, environment, and community development.">
+  <title>Volunteer Registration | HopeBridge Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23059669'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">H</div>
+        Hope<span>Bridge</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="volunteer.html" class="active">Volunteer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="btn btn-primary btn-sm"><i class="fas fa-heart"></i> Donate</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Volunteer Registration</h1>
+      <p>Join 5,000+ passionate volunteers dedicated to creating lasting change in communities across the nation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-section">
+        <div class="form-container reveal-left">
+          <h2>Register as a Volunteer</h2>
+          <p>Fill in your details below and our volunteer coordination team will reach out to you within 48 hours.</p>
+
+          <!-- Success Message -->
+          <div class="success-message" id="volunteerSuccess">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Registration Received!</h3>
+            <p>Thank you for registering as a volunteer. Our team will contact you within 48 hours with details about upcoming orientation sessions and available opportunities.</p>
+            <button class="btn btn-primary" onclick="resetForm('volunteerForm', 'volunteerSuccess')">Register Another Person</button>
+          </div>
+
+          <!-- Volunteer Form -->
+          <form id="volunteerForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+              <div class="error-message" id="fullNameError">Please enter your full name.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                <div class="error-message" id="emailError">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City <span class="required">*</span></label>
+                <input type="text" id="city" name="city" class="form-control" placeholder="Enter your city" required>
+                <div class="error-message" id="cityError">Please enter your city.</div>
+              </div>
+              <div class="form-group">
+                <label for="interest">Area of Interest <span class="required">*</span></label>
+                <select id="interest" name="interest" class="form-control" required>
+                  <option value="">Select an area...</option>
+                  <option value="education">Education & Tutoring</option>
+                  <option value="healthcare">Healthcare & Medical</option>
+                  <option value="environment">Environment & Conservation</option>
+                  <option value="community">Community Development</option>
+                  <option value="fundraising">Fundraising & Events</option>
+                  <option value="admin">Administrative Support</option>
+                  <option value="digital">Digital & Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="error-message" id="interestError">Please select an area of interest.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Why do you want to volunteer? <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your motivation, skills, and any relevant experience..." required></textarea>
+              <div class="error-message" id="messageError">Please share why you'd like to volunteer.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Submit Registration</button>
+          </form>
+        </div>
+
+        <div class="form-info reveal-right">
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-clock"></i></div>
+            <div class="form-info-text">
+              <h4>Flexible Time Commitment</h4>
+              <p>Whether you can spare two hours a week or full weekends, we have opportunities that fit your schedule. Many of our volunteer roles can be performed remotely.</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="form-info-text">
+              <h4>Training & Development</h4>
+              <p>All volunteers receive comprehensive training, ongoing support, and access to skill-building workshops. No prior experience is required — only a willingness to help.</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-users"></i></div>
+            <div class="form-info-text">
+              <h4>Join a Community</h4>
+              <p>Become part of a vibrant community of like-minded individuals. Connect with fellow volunteers through events, meetups, and our online community platform.</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-certificate"></i></div>
+            <div class="form-info-text">
+              <h4>Recognition & Certification</h4>
+              <p>We provide volunteer certificates, recommendation letters, and public recognition for significant contributions. Your volunteer hours count toward community service requirements.</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="form-info-text">
+              <h4>Safe & Inclusive Environment</h4>
+              <p>We are committed to providing a safe, inclusive, and respectful environment for all volunteers. Child protection policies and safety guidelines are strictly followed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal">Not Ready to Volunteer Yet?</h2>
+      <p class="reveal">You can still make a difference. Your donation helps us reach more communities and expand our programs.</p>
+      <div class="cta-buttons reveal">
+        <a href="donate.html" class="btn btn-white btn-lg"><i class="fas fa-heart"></i> Make a Donation</a>
+        <a href="contact.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;"><i class="fas fa-envelope"></i> Ask Us Questions</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><div class="brand-icon" style="width:36px;height:36px;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;background:var(--primary);border-radius:6px;color:white;font-weight:700;">H</div> Hope<span>Bridge</span></h3>
+          <p>HopeBridge Foundation is a registered non-profit organization dedicated to empowering underserved communities through education, healthcare, environmental sustainability, and community development programs.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Our Programs</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="stories.html"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html"><i class="fas fa-chevron-right"></i> Volunteer</a></li>
+            <li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Partnerships</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Community Avenue, Sector 15, New Delhi 110001, India</li>
+            <li><i class="fas fa-phone"></i> +91 11 4567 8900</li>
+            <li><i class="fas fa-envelope"></i> info@hopebridgefoundation.org</li>
+            <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HopeBridge Foundation. All rights reserved. | Registered under Indian Trust Act, 1882 | 80G & 12A Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

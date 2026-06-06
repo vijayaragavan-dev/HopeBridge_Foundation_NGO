@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery showcasing HopeBridge Foundation's programs, events, and community impact across education, healthcare, environment, and development.">
+  <title>Gallery | HopeBridge Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23059669'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">H</div>
+        Hope<span>Bridge</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="btn btn-primary btn-sm"><i class="fas fa-heart"></i> Donate</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>A visual journey through our programs, events, and the communities we serve across the nation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filters reveal" id="galleryFilters">
+        <button class="gallery-filter active" data-filter="all">All</button>
+        <button class="gallery-filter" data-filter="education">Education</button>
+        <button class="gallery-filter" data-filter="healthcare">Healthcare</button>
+        <button class="gallery-filter" data-filter="environment">Environment</button>
+        <button class="gallery-filter" data-filter="community">Community</button>
+        <button class="gallery-filter" data-filter="events">Events</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-category="education">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80" alt="Children in a classroom with books" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="healthcare">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Doctor examining a patient at a health camp" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="environment">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80" alt="Tree plantation drive in a forest area" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="community">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80" alt="Community members gathered for a development program" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="events">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" alt="Charity run event with participants" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="education">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Students studying with digital devices" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="healthcare">
+          <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" alt="Vaccination camp for children" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="environment">
+            <img src="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=600&q=80" alt="Volunteers planting trees" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="community">
+          <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80" alt="Women in a vocational training workshop" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="events">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Conference with speakers and audience" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="education">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80" alt="Student studying intently" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-category="community">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" alt="Food distribution drive for families" loading="lazy">
+          <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <img src="" alt="Gallery preview" id="lightboxImage">
+  </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal">Want to See More?</h2>
+      <p class="reveal">Follow us on social media for daily updates, behind-the-scenes content, and more stories of impact.</p>
+      <div class="cta-buttons reveal">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fab fa-instagram"></i> Follow Us</a>
+        <a href="volunteer.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;"><i class="fas fa-hands-helping"></i> Join Our Mission</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><div class="brand-icon" style="width:36px;height:36px;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;background:var(--primary);border-radius:6px;color:white;font-weight:700;">H</div> Hope<span>Bridge</span></h3>
+          <p>HopeBridge Foundation is a registered non-profit organization dedicated to empowering underserved communities through education, healthcare, environmental sustainability, and community development programs.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Our Programs</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="stories.html"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html"><i class="fas fa-chevron-right"></i> Volunteer</a></li>
+            <li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Partnerships</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Community Avenue, Sector 15, New Delhi 110001, India</li>
+            <li><i class="fas fa-phone"></i> +91 11 4567 8900</li>
+            <li><i class="fas fa-envelope"></i> info@hopebridgefoundation.org</li>
+            <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HopeBridge Foundation. All rights reserved. | Registered under Indian Trust Act, 1882 | 80G & 12A Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

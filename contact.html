@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact HopeBridge Foundation. Reach us by phone, email, or visit our office. We're here to answer your questions about donations, volunteering, and partnerships.">
+  <title>Contact Us | HopeBridge Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23059669'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">H</div>
+        Hope<span>Bridge</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="donate.html" class="btn btn-primary btn-sm"><i class="fas fa-heart"></i> Donate</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you. Whether you have a question about our programs, want to partner with us, or need assistance, our team is here to help.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-section">
+        <div class="form-container reveal-left">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and our team will respond within 24 hours on business days.</p>
+
+          <!-- Success Message -->
+          <div class="success-message" id="contactSuccess">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. Our team will review your message and get back to you within 24 hours on business days.</p>
+            <button class="btn btn-primary" onclick="resetForm('contactForm', 'contactSuccess')">Send Another Message</button>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name <span class="required">*</span></label>
+                <input type="text" id="contactName" name="contactName" class="form-control" placeholder="Enter your full name" required>
+                <div class="error-message" id="contactNameError">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="contactEmail" name="contactEmail" class="form-control" placeholder="Enter your email" required>
+                <div class="error-message" id="contactEmailError">Please enter a valid email address.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject <span class="required">*</span></label>
+              <select id="contactSubject" name="contactSubject" class="form-control" required>
+                <option value="">Select a subject...</option>
+                <option value="donation">Donation Inquiry</option>
+                <option value="volunteer">Volunteer Opportunities</option>
+                <option value="partnership">Corporate Partnership</option>
+                <option value="program">Program Information</option>
+                <option value="feedback">Feedback & Suggestions</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error-message" id="contactSubjectError">Please select a subject.</div>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="contactMessage" class="form-control" placeholder="Please describe your inquiry, question, or feedback in detail..." required></textarea>
+              <div class="error-message" id="contactMessageError">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+
+        <div class="form-info reveal-right">
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="form-info-text">
+              <h4>Our Address</h4>
+              <p>123 Community Avenue, Sector 15<br>New Delhi 110001, India</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-phone"></i></div>
+            <div class="form-info-text">
+              <h4>Phone Numbers</h4>
+              <p>Main: +91 11 4567 8900<br>Toll-Free: 1800-123-4567</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="form-info-text">
+              <h4>Email Addresses</h4>
+              <p>General: info@hopebridgefoundation.org<br>Donations: donate@hopebridgefoundation.org<br>Volunteer: volunteer@hopebridgefoundation.org</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-clock"></i></div>
+            <div class="form-info-text">
+              <h4>Office Hours</h4>
+              <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon"><i class="fas fa-globe"></i></div>
+            <div class="form-info-text">
+              <h4>Follow Us</h4>
+              <p>Stay connected on social media for updates, stories, and events.</p>
+              <div class="footer-social" style="margin-top: 12px;">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps Section -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Find Us Here</h2>
+        <p>Visit our headquarters in New Delhi. We welcome visitors during office hours.</p>
+      </div>
+      <div class="map-container reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.501286187058!2d77.22054631508158!3d28.61298268242529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d8b%3A0x717f8e3a78d1f0b5!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HopeBridge Foundation Office Location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal">Let's Work Together</h2>
+      <p class="reveal">Whether you are an individual, a corporation, or another NGO, we believe in the power of partnerships to create greater impact.</p>
+      <div class="cta-buttons reveal">
+        <a href="volunteer.html" class="btn btn-white btn-lg"><i class="fas fa-hands-helping"></i> Join Our Network</a>
+        <a href="donate.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;"><i class="fas fa-heart"></i> Support Our Mission</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><div class="brand-icon" style="width:36px;height:36px;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;background:var(--primary);border-radius:6px;color:white;font-weight:700;">H</div> Hope<span>Bridge</span></h3>
+          <p>HopeBridge Foundation is a registered non-profit organization dedicated to empowering underserved communities through education, healthcare, environmental sustainability, and community development programs.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Our Programs</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="stories.html"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html"><i class="fas fa-chevron-right"></i> Volunteer</a></li>
+            <li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Partnerships</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Community Avenue, Sector 15, New Delhi 110001, India</li>
+            <li><i class="fas fa-phone"></i> +91 11 4567 8900</li>
+            <li><i class="fas fa-envelope"></i> info@hopebridgefoundation.org</li>
+            <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HopeBridge Foundation. All rights reserved. | Registered under Indian Trust Act, 1882 | 80G & 12A Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
