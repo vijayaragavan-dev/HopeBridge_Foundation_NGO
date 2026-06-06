@@ -161,7 +161,7 @@ The project is fully functional, responsive, and deployed successfully.
 
 Aspiring Software Engineer | Java Developer | Web Developer
 
-📧 Email: [harinivishal5@gmail.com](mailto:harinivishal5@gmail.com)
+📧 Email: [harinivishal5@gmail.com](mailto:uvijayaragavan03@gmail.com)
 
 🔗 LinkedIn: https://www.linkedin.com/in/vijaya-ragavan-ki10052007
 
