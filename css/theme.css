@@ -163,6 +163,29 @@ html *::after {
   box-shadow: var(--shadow);
 }
 
+[data-theme="dark"] .deco-card {
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(51, 65, 85, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .deco-card-item {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(51, 65, 85, 0.3);
+}
+
+[data-theme="dark"] .deco-card-item:hover {
+  background: rgba(51, 65, 85, 0.6);
+}
+
+[data-theme="dark"] .deco-card-item span {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .deco-float {
+  opacity: 0.1;
+}
+
 [data-theme="dark"] .donate-stat {
   background: rgba(5,150,105,0.15);
 }

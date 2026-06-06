@@ -347,10 +347,10 @@ img {
   border-radius: 50%;
 }
 
-.hero .container {
+.hero .container:first-of-type {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.4fr 1.2fr 0.8fr;
+  gap: 40px;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -419,6 +419,125 @@ img {
   font-size: 0.9rem;
   color: var(--text-light);
   margin-bottom: 0;
+}
+
+/* ===== Hero Decorative Panel ===== */
+.hero-decorative {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.deco-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-xl);
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 1;
+}
+
+.deco-card-header {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.deco-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.deco-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 8px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.deco-card-item:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+.deco-card-item .deco-card-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--primary);
+  background: var(--primary-bg);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.deco-card-item span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+/* Floating decorative icons */
+.deco-float {
+  position: absolute;
+  font-size: 1.6rem;
+  color: var(--primary);
+  opacity: 0.15;
+  pointer-events: none;
+  animation: decoFloat 5s ease-in-out infinite;
+  z-index: 0;
+}
+
+.deco-float.f1 {
+  top: 6%;
+  right: 0;
+  animation-delay: 0s;
+  font-size: 1.8rem;
+}
+
+.deco-float.f2 {
+  bottom: 8%;
+  left: 0;
+  animation-delay: 2.5s;
+  color: var(--secondary);
+  font-size: 1.4rem;
+}
+
+.deco-float.f3 {
+  top: 45%;
+  right: -8%;
+  animation-delay: 1.2s;
+  color: var(--accent);
+  font-size: 1.2rem;
+  opacity: 0.1;
+}
+
+@keyframes decoFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.05); }
 }
 
 /* ===== Mission Section ===== */

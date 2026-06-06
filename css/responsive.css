@@ -111,8 +111,17 @@ img {
 /* ===== 1024px - Small Laptops / Landscape Tablets ===== */
 @media (max-width: 1024px) {
   .hero-content h1 { font-size: 2.8rem; }
-  .hero .container { gap: 40px; }
+  .hero .container:first-of-type { gap: 30px; }
   .hero-image img { height: 400px; }
+  .deco-card { padding: 20px 16px; max-width: 220px; }
+  .deco-card-header { font-size: 0.65rem; margin-bottom: 12px; }
+  .deco-card-grid { gap: 8px; }
+  .deco-card-item { padding: 10px 6px; }
+  .deco-card-item .deco-card-icon { width: 30px; height: 30px; font-size: 0.85rem; }
+  .deco-card-item span { font-size: 0.62rem; }
+  .deco-float.f1 { font-size: 1.4rem; }
+  .deco-float.f2 { font-size: 1.1rem; }
+  .deco-float.f3 { display: none; }
   .mission-grid { gap: 24px; }
   .counter-grid { gap: 20px; }
   .counter-item .counter-number { font-size: 2.4rem; }
@@ -148,10 +157,11 @@ img {
   .section-header p { font-size: 1rem; }
 
   .hero { min-height: auto; padding: 120px 0 60px; }
-  .hero .container { grid-template-columns: 1fr; gap: 40px; }
+  .hero .container:first-of-type { grid-template-columns: 1fr; gap: 40px; }
   .hero-content h1 { font-size: 2.4rem; }
   .hero-content p { font-size: 1.05rem; }
   .hero-image img { height: 350px; }
+  .hero-decorative { display: none; }
   .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
   .hero-stat { padding: 16px; }
   .hero-stat h3 { font-size: 1.6rem; }
